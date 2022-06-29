@@ -1,0 +1,130 @@
+nav {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    display: none;
+}
+
+.logo img {
+    cursor: pointer;
+    height: 25px;
+    margin: 16px 0;
+}
+
+ul {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+ li {
+    position: static;
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    border-bottom: 4px solid transparent;
+}
+
+ .items li:after {
+    transition: all ease-in .3s;
+    background: none repeat scroll 0 0 #32ffaa;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+}
+ .items li:hover:after {
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 160px;
+    }
+
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        padding: 1rem;
+    }
+
+    .menu p svg{
+        padding-top: 10px;
+        height: 80px;
+        width:  80px;
+    }
+
+    .navOpen{
+        background-color: #ffe86e;
+        animation: menu 500ms ease-in 1 forwards;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        z-index:100;
+        opacity: 1;
+    }
+
+    @keyframes menu {
+        0% {
+            opacity:0
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    .menuHidden{
+        display: none;
+    }
+
+    .logo img{
+        height: 50px;
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .contact ul{
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    li{
+        font-size: 2rem;
+    }
+
+    li :last-of-type{
+        color: #176243;
+    }
+
+}
+
+/* Utility */
+
+.hidden{
+    display: none;
+}
