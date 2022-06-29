@@ -7,29 +7,45 @@ import {BiMenuAltLeft,BiX} from "react-icons/bi"
 
 
 function Header() {
-  const[navOpen, setNavOpen]= useState(false)
+  const[navOpen, setNavOpen]= useState(true)
+  const displayWidth = document.body.offsetWidth
+
+  const menuControl = () => {
+    if (displayWidth <= 768){
+      setNavOpen(!navOpen)
+    }
+  }
+
   return (
     <>
+    {console.log(document.body.offsetWidth)}
     <nav className={navOpen?styles.navOpen: ""}>
-      
+        {/* menu icon */}      
       <div className={styles.menu}>
-       <p onClick={()=>{setNavOpen(!navOpen)}}>
+       <p onClick={menuControl}>
         {navOpen? <BiX/>: <BiMenuAltLeft/>}
         </p> 
       </div>
-      <Link to ="/">
+      {/* logo */}
+      <Link to ="/" onClick={menuControl}>
       <div className={navOpen? styles.logo: styles.hidden}>
        <img src={Logo} alt="Logo" /> 
       </div>
       </Link>
+      {/* nav items */}
       <div className={navOpen? styles.items: styles.hidden}>
         <ul>
-        <Link to ="/about"> <li>About</li> </Link>
-        <Link to ="/projects"> <li>Projects</li> </Link>
-        <Link to ="/resume">  <li>Resume</li> </Link>
-        <Link to ="/contact">  <li>Contact</li> </Link>
+        <Link to ="/about" onClick={menuControl}> 
+        <li>About</li> </Link>
+        <Link to ="/projects" onClick={menuControl}> 
+        <li>Projects</li> </Link>
+        <Link to ="/resume" onClick={menuControl}>  
+        <li>Resume</li> </Link>
+        <Link to ="/contact" onClick={menuControl}>  
+        <li>Contact</li> </Link>
         </ul>
       </div>
+      {/* nav contacts */}
       <div className={navOpen? styles.contact: styles.hidden}>
         <ul>
           <li><FiGithub/></li>
