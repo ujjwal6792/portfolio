@@ -1,0 +1,9 @@
+.home{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title h3{
+    font-size: 5rem;
+}

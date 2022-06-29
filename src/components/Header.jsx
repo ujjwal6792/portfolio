@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
 import styles from "../style/Header.module.css"
 import Logo from "../images/ujjwallogo.webp"
@@ -7,8 +7,16 @@ import {BiMenuAltLeft,BiX} from "react-icons/bi"
 
 
 function Header() {
-  const[navOpen, setNavOpen]= useState(true)
+  const[navOpen, setNavOpen]= useState(false)
   const displayWidth = document.body.offsetWidth
+
+  useEffect(()  => { 
+    function nav(){
+    if (displayWidth>768) {
+      setNavOpen(true)
+    }}
+    nav();
+  },[])
 
   const menuControl = () => {
     if (displayWidth <= 768){
@@ -48,8 +56,12 @@ function Header() {
       {/* nav contacts */}
       <div className={navOpen? styles.contact: styles.hidden}>
         <ul>
+        <Link to ="/about" onClick={menuControl}> 
           <li><FiGithub/></li>
+        </Link>
+        <Link to ="/about" onClick={menuControl}> 
           <li><FiLinkedin/></li>
+        </Link>  
           <li> 
             <a href="mailto:ujjwal.sharma6792@gmail.com">
             <FiMail/>
