@@ -1,9 +1,32 @@
 .home{
     margin-top: 5rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    flex: 1;
 }
 
 .title h3{
     font-size: 5rem;
+}
+
+.title svg {
+    filter: hue-rotate(40deg);
+}
+
+.graphic{
+    flex: 1;
+    display: grid;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.graphic img{
+    width: clamp(100px, 80%, 300px);
 }
