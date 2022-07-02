@@ -1,0 +1,23 @@
+.container{
+    padding:0  10vw 0 8vw;
+    display: flex;
+    justify-content: center;
+}
+.text{
+    text-align: center;
+    width: 40vw;
+    font-size: 1.5rem;
+}
+
+.endImage{
+    flex: 1;
+    display: grid;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.endImage img{
+    padding:0  10vw 0 8vw;
+    width: clamp(200px, 80%, 450px);
+}

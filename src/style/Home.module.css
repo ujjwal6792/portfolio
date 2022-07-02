@@ -6,6 +6,12 @@
     align-items: center;
 }
 
+h1 {
+    font-size: clamp(2.5rem,10vw,4rem);
+    text-align: center;
+    font-weight: 700;
+   }
+
 .title{
     flex: 1;
     display: flex;
@@ -30,7 +36,7 @@
 
 .graphic img{
     padding:0  10vw 0 8vw;
-    width: clamp(200px, 80%, 300px);
+    width: clamp(200px, 80%, 450px);
 }
 
 .exButton{padding-top: 2rem;
@@ -49,6 +55,7 @@
     border: 3px solid black;
     border-radius: 0.4em;
     box-shadow: 0.1em 0.1em;
+    margin-bottom: 2rem;
    }
    
    .exButton button:hover {
@@ -61,16 +68,12 @@
     box-shadow: 0.05em 0.05em;
    }
 
-   .project h1 {
-    font-size: clamp(2.5rem,10vw,4rem);
-    text-align: center;
-   }
-
    .projectCards{
     min-height: 400px ;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 2rem;
+    gap: 2rem;
+    padding:2rem 0;
     justify-content: space-evenly;
     align-items: center;
    }

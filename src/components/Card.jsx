@@ -9,28 +9,30 @@ function Card(props) {
     <>
       <div className={styles.card}>
         <div className={styles.cardInfo}>
-          <div className={styles.cardAvatar}></div>
+          <div className={styles.cardAvatar}>
+            <img src={props.img} alt="projectimage" />
+          </div>
           <div className={styles.cardTitle}>{props.name}</div>
           <div className={styles.cardSubtitle}>{props.skills}</div>
         </div>
         <ul className={styles.cardSocial}>
-          <Link to={props.website}>
+          <a href={props.website} target="_blank">
             <li className={styles.cardSocialItem}>
               <CgWebsite />
             </li>
-          </Link>
+          </a>
 
-          <Link to={props.demo}>
+          <a href={props.demo} target="_blank">
             <li className={styles.cardSocialItem}>
               <p>Demo</p>
             </li>
-          </Link >
+          </a >
 
-          <Link to={props.github}>
+          <a href={props.github} target="_blank">
             <li className={styles.cardSocialItem}>
               <FiGithub />
             </li>
-          </Link>
+          </a>
         </ul>
       </div>
     </>

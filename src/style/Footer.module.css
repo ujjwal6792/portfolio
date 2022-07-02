@@ -1,0 +1,93 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    border-top: 2px solid #00000090 ;
+}
+
+.footer ul{
+    padding-left: 0;
+
+}
+
+ul li{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.resume {
+    background-color: transparent;
+    position: relative;
+    padding: .4rem 1rem;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    text-indent: 20px;
+    border: 2px Solid #17986d ;
+    border-radius: 10px;
+   }
+   
+   .resume:hover {
+    background-color: #17986d;
+    color: white;
+   }
+   
+   .resume:before, .resume:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 52%;
+   }
+   
+   .resume:before {
+    width: 10px;
+    height: 2px;
+    border-style: solid;
+    border-width: 0 2px 2px;
+   }
+   
+   .resume:after {
+    width: 0;
+    height: 0;
+    margin-left: 3px;
+    margin-top: -7px;
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: transparent;
+    border-top-color: inherit;
+    animation: downloadArrow 1s linear infinite;
+    animation-play-state: paused;
+   }
+   
+   .resume:hover:before {
+    border-color: #cdefbd;
+   }
+   
+   .resume:hover:after {
+    border-top-color: #cdefbd;
+    animation-play-state: running;
+   }
+   
+   @keyframes downloadArrow {
+    0% {
+     margin-top: -7px;
+     opacity: 1;
+    }
+   
+    0.001% {
+     margin-top: -15px;
+     opacity: 0.4;
+    }
+   
+    50% {
+     opacity: 1;
+    }
+   
+    100% {
+     margin-top: 0;
+     opacity: 0.4;
+    }
+   }
