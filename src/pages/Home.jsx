@@ -6,6 +6,7 @@ import Card from "../components/Card";
 import UH from "../images/uniquehandlooms/uh1.webp";
 import AM from "../images/acrossme/am1.webp";
 import AboutSection from "../components/AboutSection";
+import Skills from "../components/Skills";
 
 function Home() {
   return (
@@ -21,11 +22,23 @@ function Home() {
         </div>
       </div>
       <div className={styles.exButton}>
-        <button>Explore More</button>
+        <button
+        onClick={()=>{
+          const skills = document.getElementById('skills')
+          skills.scrollIntoView(
+            { behavior: 'smooth', block: 'start' }
+          )
+        }}
+        >Explore More</button>
       </div>
 
       <h1>About</h1>
       <AboutSection />
+
+      <div id="skills">
+        <h1>Skills</h1>
+        <Skills/>
+      </div>
 
       <h1>Projects</h1>
       <div className={styles.project}>
