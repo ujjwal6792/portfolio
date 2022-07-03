@@ -36,7 +36,7 @@ function Card(props) {
         </ul>
       </div>
 
-      <div ClassName={styles.descContainer}>
+      <div className={styles.descContainer}>
         <div className={styles.desc}>{props.desc}</div>
         
         <button className={styles.cta}>

@@ -39,14 +39,15 @@ h1 {
     width: clamp(200px, 80%, 450px);
 }
 
-.exButton{padding-top: 2rem;
+.exButton{
+    padding-top: 2rem;
     display: flex;
     justify-content: center;
     align-content:center;
 }
 
 .exButton button {
-
+    cursor: pointer;
     background: #FBCA1F;
     font-family: inherit;
     padding: 0.6em 1.3em;
@@ -66,16 +67,6 @@ h1 {
    .exButton button:active {
     transform: translate(0.05em, 0.05em);
     box-shadow: 0.05em 0.05em;
-   }
-
-   .projectCards{
-    min-height: 400px ;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding:2rem 0;
-    justify-content: space-evenly;
-    align-items: center;
    }
 
 @media screen and (max-width: 768px) {
