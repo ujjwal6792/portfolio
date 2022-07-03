@@ -6,19 +6,26 @@ main {
   gap: 1rem;
   justify-content: center;
   align-items: flex-start;
-  color: #fff;
 }
 
-section {
+.left section, .right section {
   margin: 1rem 0;
-  border-radius: 10px;
-  padding: 1rem;
   width: auto;
   height: auto;
-  background: #02090f;
-  transition: all 300ms;
+  padding: 1rem;
+  border-radius: 10px;
+  background: linear-gradient(315deg, #ffeee5 0%, #fde9e4 74%);
+  border: 3px solid black;
+  box-shadow: 0.1em 0.3em;
+  backdrop-filter: saturate(180%) blur(10px);
 }
 
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  section {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
 section:hover {
   transform: scale(1.01);
 }
@@ -32,43 +39,44 @@ section:hover {
   width: 70%;
 }
 
-p {
+.left p {
   font-size: 1.2rem;
   line-height: 1.3;
 }
 
-h3,
+.left h3,
 h4 {
-  margin: 0.2rem .5rem;
+  margin: 0.2rem 0.5rem;
   display: inline-block;
 }
-h5 {
-  font-size: 1rem;
-  text-indent: 1rem;
-  margin: 0;
-  font-weight: 300;
-}
 
-section ul {
+.left section ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-section ul li {
+.left section ul li {
   font-size: 1.1rem;
 }
 
-section li {
+.right section li {
   font-weight: 500;
   font-size: 1.2rem;
   line-height: 1.3;
 }
 
-small{
-display: inline-block;
-padding-bottom: 1rem;
+.left small {
+    font-weight: 600;
+    display: block;
+  text-indent: 1rem;
 }
+
+.right small {
+    display: inline-block;
+    text-indent: 1rem;
+    padding-bottom: 1rem;
+  }
 /* Elements */
 
 .title h1 {

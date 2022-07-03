@@ -9,7 +9,7 @@ function Resume() {
         <section className={styles.title}>
           <h1>Ujjwal Sharma</h1>
           <p>
-            Front-End Developer with a proven ability to collaborate effectively
+            Web Developer with a proven ability to collaborate effectively
             with team members. With a passion for web development and design,
             worked through 1000+ hour coding sessions to learn and sharpen my
             existing skills. Ready to apply my passion for coding to a talented
@@ -20,7 +20,7 @@ function Resume() {
           <h2>EXPERIENCE</h2>
           <h3>RHS Dynamic Solutions Pvt Ltd</h3>
           <h4> - Software Specialist</h4>
-          <h5>January 2020 - PRESENT</h5>
+          <small>January 2020 - PRESENT</small>
           <ul>
             <li>
               Perform administrator functions and provide support within the Gem
@@ -44,7 +44,7 @@ function Resume() {
           <h2>PROJECTS</h2>
           <h3>Unique Handlooms</h3>
           <h4> - Developer, Designer</h4>
-          <h5>June 2022</h5>
+          <small>June 2022</small>
           <ul>
             <li>
               Build a marketplace for an interior design and handlooms business
@@ -70,7 +70,7 @@ function Resume() {
         <section>
           <h3>AcrossMe</h3>
           <h4> - Developer, Designer</h4>
-          <h5>April 2022</h5>
+          <small>April 2022</small>
           <ul>
             <li>
               Built a full-stack web app to give users a seamless marketplace
