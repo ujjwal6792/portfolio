@@ -17,9 +17,9 @@ function Skills() {
       
       <div className={styles.section}>
       <span> Node.js</span>
-      <span> Express.js</span>
-      <span> MongoDB</span>
+      <span> Expressjs</span>
       <span> Gatsby</span>
+      <span> MongoDB</span>
       <span> Docker</span>
       </div>
     </div>

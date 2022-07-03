@@ -23,21 +23,39 @@ function Home() {
       </div>
       <div className={styles.exButton}>
         <button
-        onClick={()=>{
-          const skills = document.getElementById('skills')
-          skills.scrollIntoView(
-            { behavior: 'smooth', block: 'start' }
-          )
-        }}
-        >Explore More</button>
+          onClick={() => {
+            const skills = document.getElementById("skills");
+            skills.scrollIntoView({ behavior: "smooth", block: "start" });
+          }}
+        >
+          Explore More
+        </button>
       </div>
 
       <h1>About</h1>
-      <AboutSection />
+      <AboutSection
+        text={
+          <>
+            {" "}
+            <p>
+              I'm a junior developer who has recently started my journey as a
+              web developer.
+            </p>
+            <p>
+              I'm a self-motivated learner with strong organisation, time
+              management & communication skills.
+            </p>
+            <p>
+              I'm able to work independently & collaboratively in a team with a
+              meticulous attention to detail.
+            </p>{" "}
+          </>
+        }
+      />
 
       <div id="skills">
         <h1>Skills</h1>
-        <Skills/>
+        <Skills />
       </div>
 
       <h1>Projects</h1>
@@ -54,12 +72,14 @@ function Home() {
               <>
                 <p>
                   {" "}
-                  This full-stack Project was made for a handlooms business which wanted to display and sell their products online.
+                  This full-stack Project was made for a handlooms business
+                  which wanted to display and sell their products online.
                 </p>
                 <p>
-                  In this project, I designed the UI, layout,
-                  logo and marketing graphics. While implementing it with ReactJs and vanilla Css for frontend development and using
-                  Firestore Database and firebase Authentication for backend.
+                  In this project, I designed the UI, layout, logo and marketing
+                  graphics. While implementing it with ReactJs and vanilla Css
+                  for frontend development and using Firestore Database and
+                  firebase Authentication for backend.
                 </p>
               </>
             }
@@ -76,10 +96,14 @@ function Home() {
               <>
                 <p>
                   {" "}
-                  AcrossMe is developed as an one Stop solution to explore multiple shopping, grocery, travel and pharmaceutical website/webapps without downloading plethora of apps.
+                  AcrossMe is developed as an one Stop solution to explore
+                  multiple shopping, grocery, travel and pharmaceutical
+                  website/webapps without downloading plethora of apps.
                 </p>
                 <p>
-                  In this project, I handled the design and development of the webapp as well as working with xamarin team for the design and database implementation of AcrossMe mobile app.
+                  In this project, I handled the design and development of the
+                  webapp as well as working with xamarin team for the design and
+                  database implementation of AcrossMe mobile app.
                 </p>
               </>
             }

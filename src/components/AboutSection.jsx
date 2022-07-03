@@ -2,23 +2,12 @@ import React from "react";
 import styles from "../style/AboutSection.module.css";
 import illustration2 from "../images/illustration2.webp"
 
-function AboutSection() {
+function AboutSection(props) {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.text}>
-          <p>
-            I'm a junior developer who has recently started my journey as a web
-            developer.
-          </p>
-          <p>
-            I'm a self-motivated learner with strong organisation, time
-            management & communication skills.
-          </p>
-          <p>
-            I'm able to work independently & collaboratively in a team with a
-            meticulous attention to detail.
-          </p>
+        <div className={styles.text} style={props.textSize}>
+         {props.text}
         </div>
         <div className={styles.endImage}>
            <img src={illustration2} alt="" /> 
