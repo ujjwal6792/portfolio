@@ -6,7 +6,7 @@ import { FiGithub } from "react-icons/fi";
 
 function Card(props) {
   return (
-    <>
+    <div className={styles.cardContainer}>
       <div className={styles.card}>
         <div className={styles.cardInfo}>
           <div className={styles.cardAvatar}>
@@ -26,7 +26,7 @@ function Card(props) {
             <li className={styles.cardSocialItem}>
               <p>Demo</p>
             </li>
-          </a >
+          </a>
 
           <a href={props.github} target="_blank">
             <li className={styles.cardSocialItem}>
@@ -35,7 +35,19 @@ function Card(props) {
           </a>
         </ul>
       </div>
-    </>
+
+      <div ClassName={styles.descContainer}>
+        <div className={styles.desc}>{props.desc}</div>
+        
+        <button className={styles.cta}>
+          <span>Learn More</span>
+          <svg viewBox="0 0 13 10" height="10px" width="15px">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
   );
 }
 

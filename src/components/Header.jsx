@@ -56,9 +56,9 @@ function Header() {
       {/* nav contacts */}
       <div className={navOpen? styles.contact: styles.hidden}>
         <ul>
-        <Link to ="/about" onClick={menuControl}> 
+        <a href ="https://github.com/ujjwal6792" target="_blank" onClick={menuControl}> 
           <li><FiGithub/></li>
-        </Link>
+        </a>
         <Link to ="/about" onClick={menuControl}> 
           <li><FiLinkedin/></li>
         </Link>  
