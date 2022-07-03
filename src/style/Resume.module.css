@@ -1,0 +1,77 @@
+/* Base Layout */
+main {
+  width: 90%;
+  margin: 3rem auto;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+}
+
+section {
+  margin: 1rem 0;
+  border-radius: 10px;
+  padding: 1rem;
+  width: auto;
+  height: auto;
+  background: #02090f;
+  transition: all 300ms;
+}
+
+section:hover {
+  transform: scale(1.01);
+}
+
+.left .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  width: 70%;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+h3,
+h4 {
+  margin: 0.2rem .5rem;
+  display: inline-block;
+}
+h5 {
+  font-size: 1rem;
+  text-indent: 1rem;
+  margin: 0;
+  font-weight: 300;
+}
+
+section ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+section ul li {
+  font-size: 1.1rem;
+}
+
+section li {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+small{
+display: inline-block;
+padding-bottom: 1rem;
+}
+/* Elements */
+
+.title h1 {
+  text-align: left;
+  margin: 0 0 2rem 0;
+}
