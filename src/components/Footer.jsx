@@ -10,7 +10,7 @@ function Footer() {
         <li>Email</li>
       </ul>
       <button className={styles.resume}>
-        <a href="../file/resume.pdf" download>Resume</a>
+        <a href="https://firebasestorage.googleapis.com/v0/b/ujjwals-portfolio.appspot.com/o/Ujjwal%20resume.pdf?alt=media&token=71e7696a-d3f8-4400-80ee-1ff1fede0bcd" download>Resume</a>
       </button>
     </div>
   );

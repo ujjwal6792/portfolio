@@ -5,7 +5,7 @@ import illustration2 from "../images/illustration2.webp"
 function AboutSection(props) {
   return (
     <>
-      <div className={styles.container}>
+      <div className={styles.containerAbout}>
         <div className={styles.text} style={props.textSize}>
          {props.text}
         </div>

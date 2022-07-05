@@ -3,19 +3,25 @@ import styles from "../style/Resume.module.css";
 import {HiOutlineLocationMarker} from "react-icons/hi"
 import {FiGithub} from "react-icons/fi"
 import {FiMail} from "react-icons/fi"
+import {FiDownload} from "react-icons/fi"
 import {FiPhone} from "react-icons/fi"
 import {CgWebsite} from "react-icons/cg"
+import {FcDownload} from "react-icons/fc"
 
 function Resume() {
   return (
     <>
-      <h1>Resume</h1>
+      <a href="https://firebasestorage.googleapis.com/v0/b/ujjwals-portfolio.appspot.com/o/Ujjwal%20resume.pdf?alt=media&token=71e7696a-d3f8-4400-80ee-1ff1fede0bcd" download>
+      <h1 className={styles.resume}>Resume 
+      <FiDownload/> 
+      </h1>
+      </a>
 
       <main>
         {/* left section */}
         <div className={styles.left}>
           <section className={styles.title}>
-            <h1>Ujjwal Sharma</h1>
+            <h1>Ujjwal Sharma </h1>
             <p>
               Web Developer with a proven ability to collaborate effectively
               with team members. With a passion for web development and design,

@@ -1,4 +1,11 @@
 /* Base Layout */
+
+.resume svg{
+display: inline-block;
+margin-left: 1rem;
+margin-bottom: -.5rem;
+}
+
 main {
   width: 90%;
   margin: 3rem auto;
@@ -88,4 +95,17 @@ h4 {
     width: 20px;
     margin-bottom: -.1rem;
     margin-right: .5rem;
+}
+
+@media screen and (max-width: 768px){
+    main {
+        flex-direction: column;
+      }
+      .left {
+        width: 100%;
+      }
+
+      .right{
+        width:100%;
+      }
 }
