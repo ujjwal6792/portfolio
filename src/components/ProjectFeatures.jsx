@@ -7,7 +7,7 @@ function ProjectFeatures(props) {
       <section className={styles.sectionLayout}>
         <div>
           <h2>{props.description}</h2>
-          <p>{props.intro}</p>
+          <p className={styles.pPara}>{props.intro}</p>
           {props.list.map((item)=>{
             return <li className= {styles.liPoints}>{item}</li>
             })}
@@ -16,7 +16,7 @@ function ProjectFeatures(props) {
 
         <div className={styles.ProjectFeaturesimgbox}>
             <img className={styles.img43} src={props.img} alt="img" />
-            <img className={styles.imgmb} src={props.imgm} alt="img" />
+            {/* <img className={styles.imgmb} src={props.imgm} alt="img" /> */}
         </div>
       </section>
     </div>

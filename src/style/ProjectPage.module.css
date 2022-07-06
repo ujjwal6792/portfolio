@@ -1,6 +1,6 @@
 .project{
     background: transparent;
-    width: 90vw;
+    width: 80vw;
     margin: auto;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .img43{
-    width: clamp(300px, 40vw, 500px);
+    width: clamp(300px, 35vw, 500px);
     aspect-ratio: 4/3;
     border-radius: 10px;
     border: 2px solid black;
