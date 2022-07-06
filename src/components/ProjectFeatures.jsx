@@ -15,7 +15,10 @@ function ProjectFeatures(props) {
         </div>
 
         <div className={styles.ProjectFeaturesimgbox}>
-            <img className={styles.img43} src={props.img} alt="img" />
+            
+        {props.img.map((item)=>{
+            return <img className={styles.img43} src={item} alt="img" />
+            })}
             {/* <img className={styles.imgmb} src={props.imgm} alt="img" /> */}
         </div>
       </section>

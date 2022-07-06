@@ -9,8 +9,10 @@
 .sectionLayout  {
     margin: 2rem 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 4rem;
+    text-align: justify;
 }
 
 .pPara{
@@ -34,9 +36,12 @@
     font-weight:400;
 }
 
-.featuresimgbox{
-    width: fit-content;
+.ProjectFeaturesimgbox{
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
 }
+
 /* basic styles end*/
 
 

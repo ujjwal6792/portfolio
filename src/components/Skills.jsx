@@ -6,6 +6,7 @@ function Skills() {
     <div className={styles.skills}>
       <div className={styles.section}>
           <span> JavaScript</span>
+          <span> TypeScript</span>
           <span> React</span>
           <span> Next.js</span>
           <span> Firebase</span>

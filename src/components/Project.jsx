@@ -1,31 +1,32 @@
-import React from 'react'
-import Card from "./Card"
+import React from "react";
+import Card from "./Card";
 import UH from "../images/uniquehandlooms/uh1.webp";
 import AM from "../images/acrossme/am1.webp";
 import styles from "../style/Project.module.css";
 
 function Project() {
-  return (<>
-    <h1>Projects</h1>
-    <div className={styles.project}>
+  return (
+    <>
+      <h1>Projects</h1>
+      <div className={styles.project}>
         <div className={styles.projectCards}>
           <Card
             img={UH}
             name={"Unique Handlooms"}
             skills={"React, Firebase"}
             website="https://unique-handlooms.web.app/"
-            github=""
+            github="https://github.com/ujjwal6792/uniqueHandloomDemo"
             demo=""
             desc={
               <>
                 <p>
                   {" "}
-                  This full-stack Project was made for a handlooms business
-                  which wanted to display and sell their products online.
+                  This full-stack Project is made for a handlooms business
+                  which wants to display and sell their products online.
                 </p>
                 <p>
                   In this project, I designed the UI, layout, logo and marketing
-                  graphics. While implementing it with ReactJs and vanilla Css
+                  graphics. While implementing it with ReactJs and Css3
                   for frontend development and using Firestore Database and
                   firebase Authentication for backend.
                 </p>
@@ -39,7 +40,7 @@ function Project() {
             name={"AcrossMe"}
             skills={"React, Firebase"}
             website="https://acrossme.in/"
-            github=""
+            github="https://github.com/ujjwal6792/AcrossMe-Public"
             demo=""
             desc={
               <>
@@ -60,7 +61,8 @@ function Project() {
           />
         </div>
       </div>
-      </>)
+    </>
+  );
 }
 
-export default Project
+export default Project;
