@@ -7,6 +7,8 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
+import UniqueHandlooms from "./ProductPages/UniqueHandlooms";
+import Acrossme from "./ProductPages/Acrossme";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Router>
         <Header />
         <Routes>
+          <Route path="/acrossme" element={[<Acrossme />]} />
+          <Route path="/uniquehandlooms" element={[<UniqueHandlooms />]} />
           <Route path="/contact" element={[<Contact />]} />
           <Route path="/resume" element={[<Resume />]} />
           <Route path="/projects" element={[<Projects />]} />

@@ -31,6 +31,7 @@ function Project() {
                 </p>
               </>
             }
+            link="/uniquehandlooms"
           />
 
           <Card
@@ -55,6 +56,7 @@ function Project() {
                 </p>
               </>
             }
+            link="/uniquehandlooms"
           />
         </div>
       </div>
