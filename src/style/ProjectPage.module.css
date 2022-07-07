@@ -44,12 +44,8 @@
 
 /* basic styles end*/
 
-
-
-
-/* .project .intro .textDisplay{
-    
-} */
-
-/* .project .intro img{
-} */
+@media screen and (max-width: 500px){
+.sectionLayout{
+    text-align:start;
+}
+}

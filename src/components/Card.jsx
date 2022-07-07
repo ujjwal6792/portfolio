@@ -7,7 +7,9 @@ import { FiGithub } from "react-icons/fi";
 function Card(props) {
   return (
     <div className={styles.cardContainer}>
+      
       <div className={styles.card}>
+      <a href={props.website} target="_blank">
         <div className={styles.cardInfo}>
           <div className={styles.cardAvatar}>
             <img src={props.img} alt="projectimage" />
@@ -15,6 +17,7 @@ function Card(props) {
           <div className={styles.cardTitle}>{props.name}</div>
           <div className={styles.cardSubtitle}>{props.skills}</div>
         </div>
+        </a>
         <ul className={styles.cardSocial}>
           <a href={props.website} target="_blank">
             <li className={styles.cardSocialItem}>
@@ -22,7 +25,7 @@ function Card(props) {
             </li>
           </a>
 
-          <a href={props.demo} target="_blank">
+          <a href={props.website} target="_blank">
             <li className={styles.cardSocialItem}>
               <p>Demo</p>
             </li>

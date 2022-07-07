@@ -65,7 +65,7 @@ a{
         top: 0;
         left: 0;
         display: block;
-        padding: 1rem;
+        padding: .5rem;
     }
 
     .menu p svg{

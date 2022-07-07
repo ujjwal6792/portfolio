@@ -57,7 +57,7 @@ function Project() {
                 </p>
               </>
             }
-            link="/uniquehandlooms"
+            link="/acrossme"
           />
         </div>
       </div>

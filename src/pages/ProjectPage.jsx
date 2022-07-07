@@ -1,11 +1,11 @@
-import React from "react";
+import React, {useLayoutEffect} from "react";
 import styles from "../style/ProjectPage.module.css";
 import ProjectFeatures from "../components/ProjectFeatures";
 
 function ProductPage(props) {
-  // console.log(props.introLi.map((item)=>{
-  //   item
-  //   }))
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
   return (
     <>
       <h1>{props.name}</h1>
