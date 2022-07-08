@@ -2,9 +2,7 @@ import React from "react";
 import styles from "../style/Home.module.css";
 import { FcMindMap } from "react-icons/fc";
 import Clip from "../images/illustration1.webp";
-import Card from "../components/Card";
-import UH from "../images/uniquehandlooms/uh1.webp";
-import AM from "../images/acrossme/am1.webp";
+import ClipMob from "../images/illustration1mob.webp";
 import AboutSection from "../components/AboutSection";
 import Skills from "../components/Skills";
 import Project from "../components/Project";
@@ -19,7 +17,10 @@ function Home() {
           </h3>
         </div>
         <div className={styles.graphic}>
-          <img src={Clip} alt="" />
+          <img
+            src={ClipMob}
+            srcSet={`${ClipMob} 300w, ${ClipMob} 768w, ${Clip} 1280w`}
+          />
         </div>
       </div>
       <div className={styles.exButton}>
@@ -59,8 +60,7 @@ function Home() {
         <Skills />
       </div>
 
-
-        <Project/>
+      <Project />
     </>
   );
 }
