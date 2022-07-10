@@ -76,7 +76,7 @@ function Header() {
               </li>
             </a>
             <a
-              href="https://www.linkedin.com/in/ujjwal-sharma-41525b242/"
+              href="https://www.linkedin.com/in/ujjwal--sharma/"
               target="_blank"
               onClick={menuControl}
             >

@@ -1,17 +1,22 @@
-.footer{
+.footerMain{
+    position: relative;
     display: flex;
+    color: #162b39;
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
-    border-top: 2px solid #00000090 ;
+    border-top: 2px solid #162b3950 ;
+    background: #7ba9da;
 }
 
-.footer ul{
-    padding-left: 0;
+.footerMain ul{
+    padding-left: 1rem;
 
 }
 
-ul li{
+.footerMain ul li{
+    width: 100px;
+    text-align: left;
     font-size: 1.5rem;
     font-weight: 500;
 }
@@ -25,12 +30,12 @@ ul li{
     font-weight: 300;
     text-align: center;
     text-indent: 20px;
-    border: 2px Solid #17986d ;
+    border: 2px Solid #162b39 ;
     border-radius: 10px;
    }
    
    .resume:hover {
-    background-color: #17986d;
+    background-color: #162b39;
     color: white;
    }
    
@@ -90,4 +95,21 @@ ul li{
      margin-top: 0;
      opacity: 0.4;
     }
+   }
+
+   .scrollTop {
+    padding: 0 1rem;
+    flex: 3;
+    text-align: right;
+    background: transparent;
+    border: 0;
+    font-size: 3rem;
+    color: #162b39;
+   }
+
+   @media screen and (max-width: 768px){
+
+    .scrollTop{
+        margin-top: auto;
+    }   
    }
