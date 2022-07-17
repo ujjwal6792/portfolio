@@ -7,6 +7,7 @@ function Acrossme() {
       <ProductPage
         //   introduction layout
         name="AcrossMe"
+        demoImage="https://firebasestorage.googleapis.com/v0/b/ujjwals-portfolio.appspot.com/o/projects%2Facrossme%2Flanding-acrossme.webp?alt=media&token=b73a420f-52d7-4bbc-b840-d56de4e9d19f"
         introHeading="Introduction"
         introText=" This Project was made in collaboration with AcrossMe mobile development team. In this project, I  was assigned with the task of full stack webApp development running on firebase as backend, mobile App Ui design, Web Ui design, Logo Design and marketing designs, layout, logo and marketing graphics. I used reactJs to develop the frontend of this webapp and  figma to design a basic structure for the Ui and the company logo. 
         Here we have implemented the following features:"
@@ -18,7 +19,7 @@ function Acrossme() {
           "Added a dynamnic top deals element which displays current deals (work in progress in acrossme).",
           "Pagination, image compression, category filtering and loading animations to improve  performance and user experience.",
         ]}
-        introImg=""
+        introImg="https://firebasestorage.googleapis.com/v0/b/ujjwals-portfolio.appspot.com/o/projects%2Facrossme%2Fam1.webp?alt=media&token=ff2144e5-74b5-41b8-95bc-4720815cabb6"
 
         // feature Description
         projectFeatures={[

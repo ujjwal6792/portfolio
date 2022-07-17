@@ -7,6 +7,7 @@ function UniqueHandlooms() {
       <ProductPage
         //   introduction layout
         name="Unique Handlooms"
+        demoImage="https://firebasestorage.googleapis.com/v0/b/ujjwals-portfolio.appspot.com/o/projects%2Funiquehandlooms%2Flanding-uh.webp?alt=media&token=d6c52301-3e0f-44b8-a8fe-fa786655c3d9"
         introHeading="Introduction"
         introText="This full-stack Project was made for a handlooms business which wanted to display and sell their products online. In this project, I designed the UI, layout, logo and marketing graphics. While implementing it with ReactJs and vanilla Css for frontend development and using Firestore Database and firebase Authentication for backend.
         Here we have implemented the following features:"

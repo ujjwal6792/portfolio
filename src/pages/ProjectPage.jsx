@@ -10,6 +10,7 @@ function ProductPage(props) {
     <>
       <h1>{props.name}</h1>
       <div className={styles.project}>
+      <img src={props.demoImage} className={styles.demoImage} alt="project demo image" />
         {/* introduction */}
         <section className={styles.sectionLayout}>
           <div>
