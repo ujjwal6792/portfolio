@@ -7,11 +7,12 @@ import {FiDownload} from "react-icons/fi"
 import {FiPhone} from "react-icons/fi"
 import {CgWebsite} from "react-icons/cg"
 import {FcDownload} from "react-icons/fc"
+import resume from "../file/resume"
 
 function Resume() {
   return (
     <>
-      <a href="https://firebasestorage.googleapis.com/v0/b/ujjwals-portfolio.appspot.com/o/Ujjwal%20resume.pdf?alt=media&token=71e7696a-d3f8-4400-80ee-1ff1fede0bcd" download>
+      <a href={resume.link} download>
       <h1 className={styles.resume}>Resume 
       <FiDownload/> 
       </h1>
