@@ -33,28 +33,21 @@ function Resume() {
           </section>
           <section>
             <h2>EXPERIENCE</h2>
-            <h3>RHS Dynamic Solutions Pvt Ltd</h3>
-            <h4> - Software Specialist</h4>
-            <small>January 2020 - PRESENT</small>
+            <h3>Dhiway Networks Private Limited</h3>
+            <h4> Software Engineering - Intern</h4>
+            <small>August 2022 - PRESENT</small>
             <ul>
               <li>
-                Perform administrator functions and provide support within the
-                Gem platform.
+                Add new features to the existing frontend
               </li>
               <li>
-                Tested software for bugs and operating speed, fixing bugs and
-                documenting processes to increase efficiency.
+                Working with canvas and optimization of user experience
               </li>
               <li>
-                {" "}
-                Providing Custom Solutions in web development to clients.
+                Performance Optimization and bug fixes in UI
               </li>
               <li>
-                Perform the day-to-day functions of the technology assigned.
-              </li>
-              <li>
-                Perform regular and critical maintenance activities as required
-                during or after business hours.
+                Optimize the existing codebase with latest packages and reducing clutter
               </li>
             </ul>
           </section>
@@ -126,18 +119,16 @@ function Resume() {
             <li> ReactJs/Redux</li>
             <li> TypeScript</li>
             <li> JavaScript</li>
-            <li> HTML5/CSS3 </li>
-            <li> Mongo DB</li>
+            <li> HTML5/CSS3/SCSS </li>
+            <li> Tailwind Css</li>
             <li> Firebase</li>
-            <li> Figma</li>
           </section>
           <section>
-            <h2>WORKED IN</h2>
-            <li> Node.Js</li>
-            <li> ExpressJs</li>
+            <h2>WORKED WITH</h2>
+            <li> Mongo DB</li>
+            <li> Node.Js/ ExpressJs</li>
             <li> Gatsby</li>
             <li> Docker</li>
-            <li> Tailwind Css</li>
           </section>
           <section>
             <h2>CERTIFICATION</h2>

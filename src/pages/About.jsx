@@ -18,7 +18,7 @@ function About() {
               </p>
             </>
           }
-          textSize = {{fontSize: `1.2rem`}}
+          textSize = {{fontSize: `1.3rem`, fontWeight:500, lineHeight: 1.35}}
           />
         </section>
     </div>

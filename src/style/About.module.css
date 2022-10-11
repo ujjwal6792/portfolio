@@ -1,9 +1,12 @@
 .about {
     display: flex;
     margin: 0 auto;
+    max-width: 1440px;
     align-items: center;
+    height: 80vh;
 }
 
 .about section{
-width: 90vw,
+width: 90vw;
+margin: 0 auto;
 }

@@ -40,8 +40,7 @@ function Home() {
           <>
             {" "}
             <p>
-              I'm a junior developer who has recently started my journey as a
-              web developer.
+              Hi, I'm a Web developer working with Web3 technologies to empower your digital identity and institutional certifications.
             </p>
             <p>
               I'm a self-motivated learner with strong organisation, time
