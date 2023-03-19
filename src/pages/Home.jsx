@@ -10,31 +10,35 @@ import Project from "../components/Project";
 function Home() {
   return (
     <>
-      <div className={styles.home}>
-        <div className={styles.title}>
-          <h3>
-            Hello. <FcMindMap /> <br /> I am Ujjwal
+      <div className='mt-20 flex flex-wrap justify-center items-center dark:text-new-white'>
+        <div className={'flex justify-center flex-1'}>
+          <h3 className="text-7xl font-bold">
+            Hello. 
+            <FcMindMap className="filter hue-rotate-30 inline-block m-4" /> 
+            <br/> I am Ujjwal
           </h3>
         </div>
-        <div className={styles.graphic}>
+        <div className={'grid flex-1 w-screen items-center justify-center'}>
           <img
+          className="p-0 w-home-image"
             src={ClipMob}
             srcSet={`${ClipMob} 300w, ${ClipMob} 768w, ${Clip} 1280w`}
           />
         </div>
       </div>
-      <div className={styles.exButton}>
+      <div className={'pt-8 flex justify-center items-center'}>
         <button
           onClick={() => {
             const skills = document.getElementById("skills");
             skills.scrollIntoView({ behavior: "smooth", block: "start" });
           }}
-        >
-          Explore More
+          className='cursor-pointer bg-button-yellow px-[.6em] py-[1.3em] font-extrabold text-lg'
+          >
+            Explore More
         </button>
       </div>
 
-      <h1>About</h1>
+      <h1 className="dark:text-new-white text-home font-bold font">About</h1>
       <AboutSection
         text={
           <>
@@ -49,13 +53,13 @@ function Home() {
             <p>
               I'm able to work independently & collaboratively in a team with a
               meticulous attention to detail.
-            </p>{" "}
+            </p>
           </>
         }
       />
 
       <div id="skills">
-        <h1>Skills</h1>
+        <h1 className="dark:text-new-white text-home font-bold">Skills</h1>
         <Skills />
       </div>
 

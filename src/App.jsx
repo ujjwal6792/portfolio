@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -9,12 +9,28 @@ import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import UniqueHandlooms from "./ProductPages/UniqueHandlooms";
 import Acrossme from "./ProductPages/Acrossme";
+import "./index.css";
 
 function App() {
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    let body = document.getElementsByTagName("body")[0];
+    body.style.backgroundColor = theme === "dark" ? "#181823" : "#eeeeff";
+    body.style.backgroundImage =
+      theme === "dark"
+        ? `radial-gradient(#27F7B220 3%, transparent 5%),
+      radial-gradient(#27F7B220 3%, transparent 5%)`
+        : `radial-gradient(#181823 3%, transparent 5%),
+        radial-gradient(#181823 3%, transparent 5%)`;
+    body.style.backgroundSize = "30px 30px";
+    body.style.transitionDuration= "300ms";
+  }, [theme]);
+
   return (
-    <div className="app">
+    <div className={`${theme}`}>
       <Router>
-        <Header />
+        <Header theme={theme} themeSetter={setTheme} />
         <Routes>
           <Route path="/acrossme" element={[<Acrossme />]} />
           <Route path="/uniquehandlooms" element={[<UniqueHandlooms />]} />

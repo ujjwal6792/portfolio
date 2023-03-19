@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "../style/Header.module.css";
 import Logo from "../images/ujjwallogo.webp";
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail, FiSun, FiMoon } from "react-icons/fi";
 import { BiMenuAltLeft, BiX } from "react-icons/bi";
 
-function Header() {
+function Header(props) {
+  const {theme,themeSetter} = props;
   const [navOpen, setNavOpen] = useState(false);
   const [displayWidth, setDisplayWidth] = useState(document.body.offsetWidth);
 // check windows width
@@ -34,37 +35,37 @@ function Header() {
   };
 
   return (
-    <>
-      <nav className={navOpen ? styles.navOpen : ""}>
-        {/* menu icon */}
-        <div className={styles.menu}>
+
+      <nav className='flex justify-between items-center h-16 dark:text-new-white'>
+        {/* menu icon
+        <div className=''>
           <p onClick={menuControl}>{navOpen ? <BiX /> : <BiMenuAltLeft />}</p>
-        </div>
+        </div> */}
         {/* logo */}
         <Link to="/" onClick={menuControl}>
-          <div className={navOpen ? styles.logo : styles.hidden}>
-            <img src={Logo} alt="Logo" />
+          <div >
+            <img className='h-8 transition-all dark:filter dark:invert-[200] dark:saturate-150' src={Logo} alt="Logo" />
           </div>
         </Link>
         {/* nav items */}
-        <div className={navOpen ? styles.items : styles.hidden}>
+        <div className=''>
           <ul>
             <Link to="/about" onClick={menuControl}>
-              <li>About</li>{" "}
+              <li className="pb-1 transition-all border-b-2 dark:hover:border-new-cyan hover:border-new-blue">About</li>
             </Link>
             <Link to="/projects" onClick={menuControl}>
-              <li>Projects</li>{" "}
+              <li className="pb-1 transition-all border-b-2 dark:hover:border-new-cyan hover:border-new-blue">Projects</li>
             </Link>
             <Link to="/resume" onClick={menuControl}>
-              <li>Resume</li>{" "}
+              <li className="pb-1 transition-all border-b-2 dark:hover:border-new-cyan hover:border-new-blue">Resume</li>
             </Link>
             <Link to="/contact" onClick={menuControl}>
-              <li>Contact</li>{" "}
+              <li className="pb-1 transition-all border-b-2 dark:hover:border-new-cyan hover:border-new-blue">Contact</li>
             </Link>
           </ul>
         </div>
         {/* nav contacts */}
-        <div className={navOpen ? styles.contact : styles.hidden}>
+        <div className=''>
           <ul>
             <a
               href="https://github.com/ujjwal6792"
@@ -89,10 +90,17 @@ function Header() {
                 <FiMail />
               </a>
             </li>
+            <li onClick={()=>themeSetter(e=>e==='light'?'dark':'light')}>
+                {theme==='light'?
+                <FiSun/>
+                :
+                <FiMoon/>  
+              }
+            </li>
           </ul>
         </div>
       </nav>
-    </>
+
   );
 }
 
